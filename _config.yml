@@ -324,3 +324,13 @@ defaults:
       comments: # true
       share: true
       related: true
+
+# Navigation links
+nav:
+  - title: "Home"
+    url: "/"
+  - title: "About"
+    url: /about/
+  - title: "Blog"
+    url: /year-archive/
+

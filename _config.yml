@@ -1,4 +1,4 @@
-# Welcome to Jekyll!
+a# Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your entire site, values
 # which you are expected to set up once and rarely need to edit after that.
@@ -115,9 +115,9 @@ analytics:
 author:
   name             : "Ashbel Wahome"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "crystal clear value"
+  location         : "Kenya"
+  email            :"wahomeashbel@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"

@@ -1,6 +1,6 @@
 ---
 layout: category
-title: "Finance"
+title: "Data Stories"
 category: Finance
 permalink: /categories/finance/
 ---

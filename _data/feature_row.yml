@@ -1,0 +1,18 @@
+projects:
+  - image_path: /assets/images/runner1.JPG
+    alt: "Marketing ROI"
+    title: "Marketing ROI Dashboard"
+    excerpt: "Comparing Email vs Facebook campaign performance"
+    url: /projects/marketing-roi
+
+  - image_path: /assets/images/runner2.JPG
+    alt: "Sales Insights"
+    title: "Regional Sales Dashboard"
+    excerpt: "Analyzing product sales by region and time"
+    url: /projects/sales-dashboard
+
+  - image_path: /assets/images/social-media.png
+    alt: "Social Media Analytics"
+    title: "Social Media Engagement"
+    excerpt: "How engagement varies across platforms"
+    url: /projects/social-media

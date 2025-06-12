@@ -1,4 +1,3 @@
-// Fetch projects from JSON and render them
 async function loadProjects() {
   try {
     const response = await fetch('assets/data/projects.json');
@@ -11,6 +10,7 @@ async function loadProjects() {
     projects.forEach(proj => {
       const card = document.createElement('article');
       card.className = 'project-card';
+      card.setAttribute('data-tool', proj.tool.toLowerCase()); // Add data-tool attribute
 
       card.innerHTML = `
         <h3>${proj.title}</h3>
@@ -20,11 +20,26 @@ async function loadProjects() {
 
       container.appendChild(card);
     });
+
+    // Setup filter event listener after projects are loaded
+    const filterSelect = document.getElementById("toolFilter");
+    filterSelect.addEventListener("change", function () {
+      const selectedTool = this.value;
+
+      const projectCards = container.querySelectorAll(".project-card");
+      projectCards.forEach(card => {
+        const tool = card.getAttribute("data-tool");
+        if (selectedTool === "all" || tool === selectedTool) {
+          card.style.display = "block";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    });
+
   } catch (error) {
     console.error('Error loading projects:', error);
   }
 }
 
-// Call on page load
 window.addEventListener('DOMContentLoaded', loadProjects);
-

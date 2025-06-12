@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Projects | Crystal Analytics</title>
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
@@ -10,31 +10,33 @@
 
   <header>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html" class="active">Projects</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+      </ul>
     </nav>
   </header>
 
-  <main class="container">
-    <section class="projects">
-      <h1>Our Projects</h1>
-      <div class="project-list">
-        <article class="project-card">
-          <h3>Banking Analytics</h3>
-          <p>Investigate bank health, diagnose symptoms, and offer remedies for action.</p>
-          <a href="#">Read More</a>
-        </article>
-
-        <article class="project-card">
-          <h3>Transport Demand Model</h3>
-          <p>Using USSD & demand mapping to reduce commuter wait times.</p>
-          <a href="#">Explore</a>
-        </article>
-
-        <!-- Add more projects here -->
+  <main class="projects">
+    <h1>Projects</h1>
+    <div class="project-list">
+      <div class="project-card">
+        <h3>Sales Dashboard</h3>
+        <p>A Power BI dashboard to analyze sales trends, regions, and KPIs for a retail business.</p>
+        <a href="#">View More</a>
       </div>
-    </section>
+      <div class="project-card">
+        <h3>API Data Stream</h3>
+        <p>Automated Python script to fetch weather data via API and update a PostgreSQL database.</p>
+        <a href="#">View More</a>
+      </div>
+      <div class="project-card">
+        <h3>Customer Segmentation</h3>
+        <p>Used clustering to segment customers by behavior for targeted marketing campaigns.</p>
+        <a href="#">View More</a>
+      </div>
+    </div>
   </main>
 
   <footer>
@@ -43,4 +45,3 @@
 
 </body>
 </html>
-

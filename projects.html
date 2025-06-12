@@ -20,18 +20,30 @@
 
   <main class="projects">
     <h1>Projects</h1>
+
+    <!-- Filter Dropdown -->
+    <div class="filter-container">
+      <label for="toolFilter">Filter by Tool:</label>
+      <select id="toolFilter">
+        <option value="all">All</option>
+        <option value="powerbi">Power BI</option>
+        <option value="python">Python</option>
+        <option value="excel">Excel</option>
+      </select>
+    </div>
+
     <div class="project-list">
-      <div class="project-card">
+      <div class="project-card" data-tool="powerbi">
         <h3>Sales Dashboard</h3>
         <p>A Power BI dashboard to analyze sales trends, regions, and KPIs for a retail business.</p>
         <a href="#">View More</a>
       </div>
-      <div class="project-card">
+      <div class="project-card" data-tool="python">
         <h3>API Data Stream</h3>
         <p>Automated Python script to fetch weather data via API and update a PostgreSQL database.</p>
         <a href="#">View More</a>
       </div>
-      <div class="project-card">
+      <div class="project-card" data-tool="python">
         <h3>Customer Segmentation</h3>
         <p>Used clustering to segment customers by behavior for targeted marketing campaigns.</p>
         <a href="#">View More</a>
@@ -43,5 +55,6 @@
     <p>&copy; 2025 Crystal Analytics. All rights reserved.</p>
   </footer>
 
+  <script src="assets/js/script.js"></script>
 </body>
 </html>

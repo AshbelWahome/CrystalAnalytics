@@ -176,9 +176,33 @@ footer {
   color: #0077cc;
 }
 
+.projects {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.project-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 280px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+  margin-top: 0;
+}
+
 .project-card a {
-  display: inline-block;
-  margin-top: 0.75rem;
   color: #0077cc;
   text-decoration: none;
   font-weight: bold;
@@ -188,5 +212,3 @@ footer {
   text-decoration: underline;
 }
 
-  margin-top: 2rem;
-}

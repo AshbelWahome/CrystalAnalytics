@@ -87,28 +87,39 @@ main {
   margin-top: 0;
 }
 
-/* About page specific */
-.about-page, .about-container {
+/* ABOUT PAGE STYLES */
+
+.about-section {
   max-width: 800px;
   margin: 0 auto;
   padding: 2rem;
-  font-size: 1.1rem;
-  line-height: 1.6;
+  line-height: 1.7;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-.about-hero {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.about-hero h2 {
+.about-section h1 {
   font-size: 2rem;
-  margin-bottom: 0.5rem;
+  color: #0077cc;
+  margin-bottom: 1rem;
 }
 
-.about-content p {
-  margin-bottom: 1.2rem;
+.about-section p {
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+  color: #333;
 }
+
+.about-section strong {
+  color: #0077cc;
+}
+
+nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 /* Responsive tweaks */
 
 @media (max-width: 768px) {

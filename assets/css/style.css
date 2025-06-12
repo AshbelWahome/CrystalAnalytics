@@ -76,3 +76,24 @@ footer {
   margin-top: 4rem;
 }
 
+.about-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.about-hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about-hero h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-content p {
+  margin-bottom: 1.2rem;
+}

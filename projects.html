@@ -21,8 +21,7 @@
   <main class="projects">
     <h1>Projects</h1>
 
-    <!-- Filter Dropdown -->
-    <div class="filter-container">
+    <div class="filter-container" style="margin-bottom: 1.5rem;">
       <label for="toolFilter">Filter by Tool:</label>
       <select id="toolFilter">
         <option value="all">All</option>
@@ -32,22 +31,8 @@
       </select>
     </div>
 
-    <div class="project-list">
-      <div class="project-card" data-tool="powerbi">
-        <h3>Sales Dashboard</h3>
-        <p>A Power BI dashboard to analyze sales trends, regions, and KPIs for a retail business.</p>
-        <a href="#">View More</a>
-      </div>
-      <div class="project-card" data-tool="python">
-        <h3>API Data Stream</h3>
-        <p>Automated Python script to fetch weather data via API and update a PostgreSQL database.</p>
-        <a href="#">View More</a>
-      </div>
-      <div class="project-card" data-tool="python">
-        <h3>Customer Segmentation</h3>
-        <p>Used clustering to segment customers by behavior for targeted marketing campaigns.</p>
-        <a href="#">View More</a>
-      </div>
+    <div id="projects-container" class="project-list">
+      <!-- Projects will load here dynamically -->
     </div>
   </main>
 

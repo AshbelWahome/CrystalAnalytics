@@ -11,7 +11,7 @@
     "description": "Automated Python script to fetch weather data via API and stream it into a PostgreSQL database.",
     "link": "projects/API-streams.html",
     "tool": "Python",
-    "image": "assets/assets/images/APIstream.jpg"
+    "image": "assets/assets/images/APIstreams.jpg"
   },
   {
     "title": "Customer Segmentation",

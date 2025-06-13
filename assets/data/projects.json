@@ -3,18 +3,21 @@
     "title": "Sales Dashboard",
     "description": "A Power BI dashboard to analyze sales trends, regions, and KPIs for a retail business.",
     "link": "projects/sales-dashboard.html",
-    "image": "assets/assets/images/sales dashboard.jpg"
+    "image": "assets/assets/images/sales dashboard.jpg",
+    "tool": "Power BI"
   },
   {
     "title": "API Data Stream",
     "description": "Automated Python script to fetch weather data via API and update a PostgreSQL database.",
     "link": "projects/API-streams.html",
-    "image": "assets/assets/images/APIstreams.jpg"
+    "image": "assets/assets/images/APIstreams.jpg",
+    "tool": "Python"
   },
   {
     "title": "Customer Segmentation",
     "description": "Used clustering to segment customers by behavior for targeted marketing campaigns.",
     "link": "projects/customer-segmentation.html",
-    "image": "assets/assets/images/customer segmentation.jpg"
+    "image": "assets/assets/images/customer segmentation.jpg",
+    "tool": "Python"
   }
 ]

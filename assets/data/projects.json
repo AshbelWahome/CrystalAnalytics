@@ -1,12 +1,20 @@
 [
   {
     "title": "Sales Dashboard",
-    "description": "A Power BI dashboard to analyze sales trends.",
+    "description": "A Power BI dashboard to analyze sales trends, regions, and KPIs for a retail business.",
+    "tool": "Power BI",
     "link": "projects/sales-dashboard.html"
   },
   {
     "title": "API Data Stream",
-    "description": "Python script to fetch weather data and update PostgreSQL.",
+    "description": "Automated Python script to fetch weather data via API and update a PostgreSQL database.",
+    "tool": "Python",
     "link": "projects/api-data-stream.html"
+  },
+  {
+    "title": "Customer Segmentation",
+    "description": "Used clustering to segment customers by behavior for targeted marketing campaigns.",
+    "tool": "Python",
+    "link": "projects/customer-segmentation.html"
   }
 ]

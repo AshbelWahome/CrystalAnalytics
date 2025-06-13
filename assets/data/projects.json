@@ -1,14 +1,12 @@
 [
   {
     "title": "Sales Dashboard",
-    "description": "A Power BI dashboard to analyze sales trends, regions, and KPIs for a retail business.",
-    "link": "#",
-    "tool": "PowerBI"
+    "description": "A Power BI dashboard to analyze sales trends.",
+    "link": "projects/sales-dashboard.html"
   },
   {
     "title": "API Data Stream",
-    "description": "Automated Python script to fetch weather data via API and update a PostgreSQL database.",
-    "link": "#",
-    "tool": "Python"
+    "description": "Python script to fetch weather data and update PostgreSQL.",
+    "link": "projects/api-data-stream.html"
   }
 ]

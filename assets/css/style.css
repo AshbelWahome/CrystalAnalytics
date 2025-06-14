@@ -154,3 +154,12 @@ header.major h2 {
     font-size: 1.6rem;
   }
 }
+.tag {
+  display: inline-block;
+  background: #007acc;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  margin: 0.2rem;
+  font-size: 0.8rem;
+  border-radius: 3px;
+}

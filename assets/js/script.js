@@ -29,7 +29,7 @@ function renderProjects(projects) {
       <img src="${proj.image}" alt="${proj.title}" class="project-thumbnail">
       <h3>${proj.title}</h3>
       <p>${proj.description}</p>
-      <a href="${proj.link}">Learn More</a>
+      <a href="projects/project-detail.html?title=${encodeURIComponent(proj.title)}">Learn More</a>
     `;
 
     container.appendChild(card);
@@ -43,7 +43,7 @@ function filterProjects() {
   if (selectedTool === 'all') {
     renderProjects(allProjects);
   } else {
-    const filtered = allProjects.filter(proj => 
+    const filtered = allProjects.filter(proj =>
       proj.tool && proj.tool.toLowerCase() === selectedTool
     );
     renderProjects(filtered);

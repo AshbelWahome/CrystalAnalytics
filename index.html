@@ -4,7 +4,7 @@
   <title>Crystal Analytics</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 <body class="is-preload">
 
@@ -17,10 +17,10 @@
   </header>
 
   <!-- Main -->
-  <div id="main">
-    
+  <div id="main" class="wrapper style1">
+
     <!-- About Section -->
-    <section id="one">
+    <section id="one" class="container">
       <header class="major">
         <h2>About Crystal Analytics</h2>
       </header>
@@ -33,10 +33,13 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="two">
-      <h2>Projects</h2>
-      <div id="tool-filter-container">
-        <label for="toolFilter">Filter by Tool:</label>
+    <section id="two" class="container">
+      <header class="major">
+        <h2>Projects</h2>
+      </header>
+
+      <div class="filter-container" style="margin-bottom: 2rem;">
+        <label for="toolFilter"><strong>Filter by Tool:</strong></label>
         <select id="toolFilter">
           <option value="all">All</option>
           <option value="powerbi">Power BI</option>
@@ -50,9 +53,11 @@
       </div>
     </section>
 
-    <!-- Contact -->
-    <section id="three">
-      <h2>Contact</h2>
+    <!-- Contact Section -->
+    <section id="three" class="container">
+      <header class="major">
+        <h2>Contact</h2>
+      </header>
       <p>Let's work together! You can reach us through any of our social channels or drop us a message.</p>
       <ul class="icons">
         <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
@@ -69,6 +74,7 @@
     </div>
   </footer>
 
+  <!-- Scripts -->
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/browser.min.js"></script>
   <script src="assets/js/breakpoints.min.js"></script>

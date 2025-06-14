@@ -68,30 +68,30 @@
 				||	browser.mobile)
 					settings.parallax = false;
 
-			if (settings.parallax) {
+				if (settings.parallax) {
 
-				breakpoints.on('<=medium', function() {
+					breakpoints.on('<=medium', function() {
 
-					$window.off('scroll.strata_parallax');
-					$header.css('background-position', '');
+						$window.off('scroll.strata_parallax');
+						$header.css('background-position', '');
 
-				});
-
-				breakpoints.on('>medium', function() {
-
-					$header.css('background-position', 'left 0px');
-
-					$window.on('scroll.strata_parallax', function() {
-						$header.css('background-position', 'left ' + (-1 * (parseInt($window.scrollTop()) / settings.parallaxFactor)) + 'px');
 					});
 
-				});
+					breakpoints.on('>medium', function() {
 
-				$window.on('load', function() {
-					$window.triggerHandler('scroll');
-				});
+						$header.css('background-position', 'left 0px');
 
-			}
+						$window.on('scroll.strata_parallax', function() {
+							$header.css('background-position', 'left ' + (-1 * (parseInt($window.scrollTop()) / settings.parallaxFactor)) + 'px');
+						});
+
+					});
+
+					$window.on('load', function() {
+						$window.triggerHandler('scroll');
+					});
+
+				}
 
 	// Main Sections: Two.
 
@@ -113,5 +113,21 @@
 				});
 
 			});
+
+	// Fade-in animation on scroll
+		$window.on('load', function () {
+			const observer = new IntersectionObserver((entries, obs) => {
+				entries.forEach(entry => {
+					if (entry.isIntersecting) {
+						entry.target.classList.add('visible');
+						obs.unobserve(entry.target);
+					}
+				});
+			}, { threshold: 0.1 });
+
+			document.querySelectorAll('.fade-in').forEach(el => {
+				observer.observe(el);
+			});
+		});
 
 })(jQuery);

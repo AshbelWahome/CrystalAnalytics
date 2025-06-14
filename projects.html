@@ -4,12 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Projects | Crystal Analytics</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
 </head>
-<body>
+<body class="is-preload">
 
-  <header>
-    <nav>
+  <!-- Header -->
+  <header id="header">
+    <div class="inner">
+      <h1>Crystal Analytics</h1>
+      <p>Data that makes sense, projects that make impact</p>
+    </div>
+    <nav id="nav">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -18,29 +23,42 @@
     </nav>
   </header>
 
-  <main class="projects">
-    <h1>Projects</h1>
+  <!-- Main -->
+  <div id="main" class="wrapper style1">
+    <section class="container box">
+      <header class="major">
+        <h2>Projects</h2>
+      </header>
 
-    <div class="filter-container" style="margin-bottom: 1.5rem;">
-      <label for="toolFilter">Filter by Tool:</label>
-      <select id="toolFilter">
-        <option value="all">All</option>
-        <option value="powerbi">Power BI</option>
-        <option value="python">Python</option>
-        <option value="excel">Excel</option>
-      </select>
+      <div class="filter-container" style="margin-bottom: 1.5rem;">
+        <label for="toolFilter">Filter by Tool:</label>
+        <select id="toolFilter">
+          <option value="all">All</option>
+          <option value="powerbi">Power BI</option>
+          <option value="python">Python</option>
+          <option value="excel">Excel</option>
+        </select>
+      </div>
+
+      <div class="row" id="projects-container">
+        <!-- Project cards will be injected here dynamically -->
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="inner">
+      <p>&copy; 2025 Crystal Analytics. Built with clarity.</p>
     </div>
-
-    <div id="projects-container" class="project-list">
-      <!-- Projects will load here dynamically -->
-    </div>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Crystal Analytics. All rights reserved.</p>
   </footer>
 
-  <!-- JavaScript that dynamically loads projects -->
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
   <script src="assets/js/script.js"></script>
 </body>
 </html>

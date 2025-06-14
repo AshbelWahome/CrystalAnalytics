@@ -4,20 +4,26 @@
     "description": "A Power BI dashboard to analyze sales trends, regions, and KPIs for a retail business.",
     "link": "projects/sales-dashboard.html",
     "image": "assets/assets/images/sales dashboard.jpg",
-    "tool": "Power BI"
+    "tool": "Power BI",
+    "industry": "Retail",
+    "techStack": "Power BI, DAX, Data Modeling"
   },
   {
     "title": "API Data Stream",
     "description": "Automated Python script to fetch weather data via API and update a PostgreSQL database.",
     "link": "projects/API-streams.html",
     "image": "assets/assets/images/APIstreams.jpg",
-    "tool": "Python"
+    "tool": "Python",
+    "industry": "Weather / Tech",
+    "techStack": "Python, PostgreSQL, REST APIs, cron jobs"
   },
   {
     "title": "Customer Segmentation",
     "description": "Used clustering to segment customers by behavior for targeted marketing campaigns.",
     "link": "projects/customer-segmentation.html",
     "image": "assets/assets/images/customer segmentation.jpg",
-    "tool": "Python"
+    "tool": "Python",
+    "industry": "Marketing",
+    "techStack": "Python, scikit-learn, K-means clustering"
   }
 ]

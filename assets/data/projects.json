@@ -26,14 +26,14 @@ function renderProjects(projects) {
     col.className = 'col-4 col-6-medium col-12-small';
 
     col.innerHTML = `
-      <span class="image fit">
-        <img src="${proj.image}" alt="${proj.title}" style="height: 200px; object-fit: cover;" />
-      </span>
-      <h3>${proj.title}</h3>
-      <p>${proj.description}</p>
-      <ul class="actions">
-        <li><a href="projects/project-detail.html?title=${encodeURIComponent(proj.title)}" class="button">View Project</a></li>
-      </ul>
+      <section class="box">
+        <a href="projects/project-detail.html?title=${encodeURIComponent(proj.title)}" class="image fit">
+          <img src="${proj.image}" alt="${proj.title}" />
+        </a>
+        <h3>${proj.title}</h3>
+        <p>${proj.description}</p>
+        <a href="projects/project-detail.html?title=${encodeURIComponent(proj.title)}" class="button">Learn More</a>
+      </section>
     `;
 
     container.appendChild(col);

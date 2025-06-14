@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Projects | Crystal Analytics</title>
+
+  <!-- Strata Styling -->
+  <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
   <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 <body class="is-preload">
@@ -19,6 +22,7 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="blog.html">Blog</a></li>
       </ul>
     </nav>
   </header>
@@ -30,8 +34,9 @@
         <h2>Projects</h2>
       </header>
 
+      <!-- Filter Dropdown -->
       <div class="filter-container" style="margin-bottom: 1.5rem;">
-        <label for="toolFilter">Filter by Tool:</label>
+        <label for="toolFilter"><strong>Filter by Tool:</strong></label>
         <select id="toolFilter">
           <option value="all">All</option>
           <option value="powerbi">Power BI</option>
@@ -40,6 +45,7 @@
         </select>
       </div>
 
+      <!-- Dynamic Projects -->
       <div class="row" id="projects-container">
         <!-- Project cards will be injected here dynamically -->
       </div>
@@ -49,7 +55,7 @@
   <!-- Footer -->
   <footer id="footer">
     <div class="inner">
-      <p>&copy; 2025 Crystal Analytics. Built with clarity.</p>
+      <p>&copy; 2025 Crystal Analytics. Built with clarity. Template: <a href="https://html5up.net/strata">Strata</a>.</p>
     </div>
   </footer>
 

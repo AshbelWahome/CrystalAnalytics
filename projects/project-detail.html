@@ -1,48 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <!-- Dynamic Title & Description -->
   <title>Loading... | Crystal Analytics</title>
-  <meta name="description" content="Project details from Crystal Analytics" id="meta-description">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <!-- Open Graph Tags for Social Sharing -->
+  <!-- SEO Tags -->
+  <meta name="description" content="Project details from Crystal Analytics" id="meta-description">
   <meta property="og:title" content="" id="og-title">
   <meta property="og:description" content="" id="og-description">
   <meta property="og:image" content="" id="og-image">
   <meta property="og:type" content="website">
   <meta property="og:url" content="" id="og-url">
 
-  <!-- Twitter Card Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="" id="twitter-title">
   <meta name="twitter:description" content="" id="twitter-description">
   <meta name="twitter:image" content="" id="twitter-image">
 
-  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
 </head>
-<body>
+<body class="is-preload">
 
-  <header>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../about.html">About</a></li>
-        <li><a href="../projects.html" class="active">Projects</a></li>
-      </ul>
-    </nav>
+  <!-- Header -->
+  <header id="header">
+    <div class="inner">
+      <h1>Crystal Analytics</h1>
+      <p>Project Spotlight</p>
+    </div>
   </header>
 
-  <main class="project-details" id="project-detail-container">
-    <!-- Project details will be loaded here -->
-  </main>
+  <!-- Main -->
+  <div id="main">
+    <section id="project-detail" class="container">
+      <header class="major">
+        <h2 id="project-title">Loading...</h2>
+      </header>
+      <div class="row">
+        <div class="col-6 col-12-medium">
+          <span class="image fit"><img id="project-image" src="" alt="Project Image"></span>
+        </div>
+        <div class="col-6 col-12-medium">
+          <p id="project-description"></p>
+          <ul>
+            <li><strong>Tool:</strong> <span id="project-tool"></span></li>
+            <li><strong>Industry:</strong> <span id="project-industry"></span></li>
+            <li><strong>Tech Stack:</strong> <span id="project-tech"></span></li>
+          </ul>
+          <ul class="actions">
+            <li><a href="../projects.html" class="button">← Back to Projects</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
 
-  <footer>
-    <p>&copy; 2025 Crystal Analytics. All rights reserved.</p>
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="inner">
+      <p>&copy; 2025 Crystal Analytics. Built with clarity. Template by <a href="https://html5up.net/strata">HTML5 UP</a>.</p>
+    </div>
   </footer>
 
+  <!-- Scripts -->
+  <script src="../assets/js/jquery.min.js"></script>
+  <script src="../assets/js/browser.min.js"></script>
+  <script src="../assets/js/breakpoints.min.js"></script>
+  <script src="../assets/js/util.js"></script>
+  <script src="../assets/js/main.js"></script>
   <script src="../assets/js/project-detail.js"></script>
 </body>
 </html>

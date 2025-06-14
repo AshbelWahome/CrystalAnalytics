@@ -1,10 +1,26 @@
 [
   {
-    "title": "5 Ways Data Can Transform Transport Systems",
-    "summary": "From predicting demand to improving rider experience, here's how data is revolutionizing transport.",
-    "content": "Full blog content goes here...",
+    "title": "Behind the Dashboard: Building a Retail Sales Report in Power BI",
+    "summary": "Go behind the scenes of building a dashboard that helped visualize retail performance across KPIs and regions — and helped management take faster action.",
+    "slug": "retail-sales-dashboard",
     "date": "2025-06-15",
-    "slug": "transport-insights",
-    "image": "assets/assets/images/transport-data.jpg"
+    "image": "assets/assets/images/sales dashboard.jpg",
+    "content": "Every dashboard has a story. Ours began when a retail client struggled to track regional sales and KPIs. They had the data — but it was buried in spreadsheets across departments.\n\nWe built a centralized Power BI dashboard that brought clarity to this chaos. It pulled sales data from multiple branches and visualized it with clarity across:\n- Monthly and quarterly sales trends\n- Regional performance comparisons\n- Top-selling products and categories\n- Target vs actual KPIs\n\nWhy Power BI? Its interactive filters and dynamic visuals helped management zoom into specific regions or product lines, enabling quicker decisions.\n\nThe impact was immediate. Sales managers could track performance weekly, detect lagging branches, and prioritize support. Executives got a high-level view that wasn’t possible before.\n\nThis dashboard is now a template we customize for other businesses — because every team deserves to see what their data is really saying."
+  },
+  {
+    "title": "Automating Weather Insights: Building an API Data Stream",
+    "summary": "We built a Python script that fetches weather data from a public API and feeds it into a PostgreSQL database — powering dashboards and daily updates.",
+    "slug": "weather-api-stream",
+    "date": "2025-06-10",
+    "image": "assets/assets/images/APIstreams.jpg",
+    "content": "Real-time data is the future — and weather is a perfect case. We built a Python pipeline to automate the retrieval of weather data from an open API and insert it into a PostgreSQL database.\n\nThe system was designed to:\n- Run on a scheduled basis (cron jobs)\n- Store historical data for trend analysis\n- Feed live dashboards via SQL queries\n\nWe used `requests` to interact with the API, `psycopg2` for the database connection, and scheduled it on a lightweight VPS.\n\nWith this in place, we could:\n- Track daily weather conditions for logistics planning\n- Visualize temperature/rainfall trends over weeks\n- Combine with product delivery metrics for powerful insights\n\nThis system proved how quickly a business can unlock value from public data — with just a few lines of Python."
+  },
+  {
+    "title": "Clustering Customers: How Segmentation Drives Smarter Marketing",
+    "summary": "Using clustering techniques, we grouped customers by behavior and built targeted marketing strategies that lifted engagement and retention.",
+    "slug": "customer-segmentation",
+    "date": "2025-06-08",
+    "image": "assets/assets/images/customer segmentation.jpg",
+    "content": "Not all customers are the same. That was the insight driving our segmentation project for a mid-size e-commerce platform.\n\nWe extracted customer purchase and engagement data, then used clustering algorithms (K-Means and DBSCAN) to group users into:\n- High-value repeat buyers\n- Discount-driven occasional shoppers\n- One-time visitors\n\nThe business gained:\n- Sharper marketing focus (retargeting based on segment)\n- New loyalty strategies for the high-value cluster\n- Email campaigns tailored to each group\n\nBy visualizing segments in 2D with PCA and overlaying purchase volume, the team could intuitively understand who their customers really were.\n\nSegmentation remains one of the most powerful ways to make your marketing budget smarter — and your users feel understood."
   }
 ]

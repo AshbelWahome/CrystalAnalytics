@@ -3262,3 +3262,70 @@ input, select, textarea {
   border-radius: 4px;
   font-weight: bold;
 }
+/* Main CSS for Crystal Analytics (Strata-Based) */
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Project Card Styles */
+.project-card {
+  width: 30%;
+  margin: 1rem;
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-card-content {
+  padding: 1rem;
+}
+
+.project-card-content h3 {
+  margin: 0 0 0.5rem;
+  color: #007acc;
+}
+
+.project-card-content p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.project-card-content a {
+  text-decoration: none;
+  color: #fff;
+  background: #007acc;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+  display: inline-block;
+}

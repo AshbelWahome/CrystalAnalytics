@@ -1,29 +1,16 @@
 [
   {
-    "title": "Behind the Dashboard: Building a Retail Sales Report in Power BI",
-    "summary": "Go behind the scenes of building a dashboard that helped visualize retail performance across KPIs and regions — and helped management take faster action.",
-    "slug": "retail-sales-dashboard",
-    "date": "2025-06-15",
-    "image": "assets/assets/images/sales dashboard.jpg",
-    "tags": ["PowerBI"],
-    "content": "Every dashboard has a story. Ours began when a retail client struggled to track regional sales and KPIs... [full content omitted for brevity]"
+    "title": "How Power BI Uncovered Sales Gaps",
+    "image": "assets/images/blog-powerbi.jpg",
+    "date": "2025-06-01",
+    "tags": ["PowerBI", "Retail", "Dashboard"],
+    "link": "blog-detail.html?title=How Power BI Uncovered Sales Gaps"
   },
   {
-    "title": "Automating Weather Insights: Building an API Data Stream",
-    "summary": "We built a Python script that fetches weather data from a public API and feeds it into a PostgreSQL database — powering dashboards and daily updates.",
-    "slug": "weather-api-stream",
-    "date": "2025-06-10",
-    "image": "assets/assets/images/APIstreams.jpg",
-    "tags": ["Python"],
-    "content": "Real-time data is the future — and weather is a perfect case. We built a Python pipeline to automate the retrieval of weather data... [full content omitted]"
-  },
-  {
-    "title": "Clustering Customers: How Segmentation Drives Smarter Marketing",
-    "summary": "Using clustering techniques, we grouped customers by behavior and built targeted marketing strategies that lifted engagement and retention.",
-    "slug": "customer-segmentation",
-    "date": "2025-06-08",
-    "image": "assets/assets/images/customer segmentation.jpg",
-    "tags": ["Python", "Excel"],
-    "content": "Not all customers are the same. That was the insight driving our segmentation project for a mid-size e-commerce platform... [full content omitted]"
+    "title": "Streaming Weather Data with Python APIs",
+    "image": "assets/images/blog-weather.jpg",
+    "date": "2025-05-28",
+    "tags": ["Python", "API", "PostgreSQL"],
+    "link": "blog-detail.html?title=Streaming Weather Data with Python APIs"
   }
 ]

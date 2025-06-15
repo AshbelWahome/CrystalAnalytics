@@ -3387,7 +3387,7 @@ body {
   margin-top: 0.5rem;
 }
 .about-hero {
-  background: url('..assets/assets/images/about-bg.jpg') center center / cover no-repeat;
+  background: url('assets/assets/images/about-bg.jpg') center center / cover no-repeat;
   height: 60vh;
   display: flex;
   align-items: center;

@@ -131,3 +131,16 @@
 		});
 
 })(jQuery);
+/* Responsive tweaks */
+@media screen and (max-width: 980px) {
+  .project-card {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .project-card {
+    width: 100%;
+  }
+}
+

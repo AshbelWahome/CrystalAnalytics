@@ -62,38 +62,3 @@ window.addEventListener('DOMContentLoaded', () => {
     tagSelect.addEventListener('change', filterByTag);
   }
 });
-
-// Fetch and render blog posts
-async function loadBlogs() {
-  try {
-    const response = await fetch('assets/data/blogs.json');
-    if (!response.ok) throw new Error('Could not load blogs');
-    const blogs = await response.json();
-
-    const container = document.getElementById('blog-container');
-    container.innerHTML = '';
-
-    blogs.forEach(blog => {
-      const post = document.createElement('div');
-      post.className = 'blog-post fade-in';
-
-      const tags = blog.tags.map(tag => `<span>${tag}</span>`).join('');
-
-      post.innerHTML = `
-        <img src="${blog.image}" alt="${blog.title}">
-        <div class="blog-post-content">
-          <h3>${blog.title}</h3>
-          <div class="meta">${blog.date}</div>
-          <div class="tags">${tags}</div>
-          <a href="${blog.link}" class="button">Read More</a>
-        </div>
-      `;
-
-      container.appendChild(post);
-    });
-  } catch (error) {
-    console.error('Error loading blogs:', error);
-  }
-}
-
-window.addEventListener('DOMContentLoaded', loadBlogs);

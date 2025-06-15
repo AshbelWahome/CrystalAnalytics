@@ -3329,3 +3329,60 @@ body {
   font-weight: bold;
   display: inline-block;
 }
+.blog-post {
+  width: 30%;
+  background: #fff;
+  border-radius: 6px;
+  margin: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.blog-post:hover {
+  transform: translateY(-6px);
+}
+
+.blog-post img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.blog-post-content {
+  padding: 1rem;
+}
+
+.blog-post-content h3 {
+  margin: 0 0 0.5rem;
+  color: #333;
+}
+
+.blog-post-content .meta {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+
+.blog-post-content .tags {
+  margin: 0.5rem 0;
+}
+
+.blog-post-content .tags span {
+  background: #eee;
+  color: #555;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.5rem;
+  margin-right: 0.3rem;
+  border-radius: 4px;
+}
+
+.blog-post-content a.button {
+  background: #49bf9d;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 0.5rem;
+}

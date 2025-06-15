@@ -1,14 +1,14 @@
 [
   {
     "title": "How Power BI Uncovered Sales Gaps",
-    "image": "assets/images/blog-powerbi.jpg",
+    "image": "assets/images/sales dashboard.jpg",
     "date": "2025-06-01",
     "tags": ["PowerBI", "Retail", "Dashboard"],
     "link": "blog-detail.html?title=How Power BI Uncovered Sales Gaps"
   },
   {
     "title": "Streaming Weather Data with Python APIs",
-    "image": "assets/images/blog-weather.jpg",
+    "image": "assets/images/APIstreams.jpg",
     "date": "2025-05-28",
     "tags": ["Python", "API", "PostgreSQL"],
     "link": "blog-detail.html?title=Streaming Weather Data with Python APIs"

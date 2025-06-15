@@ -3386,3 +3386,19 @@ body {
   display: inline-block;
   margin-top: 0.5rem;
 }
+.about-hero {
+  background: url('../images/about-bg.jpg') center center / cover no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.about-hero .overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 10px;
+}

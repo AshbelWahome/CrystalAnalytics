@@ -3219,3 +3219,46 @@ input, select, textarea {
 			}
 
 	}
+.project-card {
+  width: 30%;
+  margin: 1rem;
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-card-content {
+  padding: 1rem;
+}
+
+.project-card-content h3 {
+  margin: 0 0 0.5rem;
+  color: #007acc;
+}
+
+.project-card-content p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.project-card-content a {
+  text-decoration: none;
+  color: #fff;
+  background: #007acc;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+}

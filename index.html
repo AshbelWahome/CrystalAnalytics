@@ -8,25 +8,71 @@
   <!-- Strata Styling -->
   <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
   <link rel="stylesheet" href="assets/css/main.css" />
+  <style>
+    /* Hero background image */
+    #hero {
+      background: url('assets/images/hero-bg.jpg') center center / cover no-repeat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 2rem;
+    }
+
+    #hero .inner {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 3rem;
+      border-radius: 12px;
+    }
+
+    #hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    #hero p {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+    }
+
+    #hero a.button {
+      background: #49bf9d;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    #hero a.button:hover {
+      background: #3aa584;
+    }
+  </style>
 </head>
 
 <body class="is-preload">
 
-  <!-- Header -->
-  <header id="header">
+  <!-- Hero Banner -->
+  <section id="hero">
     <div class="inner">
       <h1>Crystal Analytics</h1>
-      <p>We give you your data's worth. Simple and crystal clear.</p>
+      <p>We give you your data's worth.<br />Simple and crystal clear.</p>
+      <a href="#two" class="button">Explore Projects</a>
     </div>
-    <nav id="nav">
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="blog.html">Blog</a></li>
-      </ul>
-    </nav>
-  </header>
+  </section>
+
+  <!-- Navigation -->
+  <nav id="nav" style="background: #111; padding: 0.5rem 2rem; text-align: center;">
+    <ul style="list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; gap: 2rem;">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+  </nav>
 
   <!-- Main -->
   <div id="main" class="wrapper style1">
@@ -38,7 +84,7 @@
       </header>
       <span class="image featured"><img src="assets/images/about.jpg" alt="Data analysis visualization" /></span>
       <p>
-        We'll take a dive into the deep end with your data to tell you more about your business or project.
+        I take a dive into the deep end with your data to tell you more about your business or project.
         We believe in the truth — and numbers tell it plainly.
         At Crystal Analytics, we uncover patterns and visualize them through tools like Excel, Power BI, Tableau, and Python.
         Need live data? We can connect your systems via APIs.

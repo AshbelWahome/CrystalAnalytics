@@ -1,62 +1,32 @@
-let allProjects = [];
-
+// Fetch projects from JSON and render them with Strata-style cards
 async function loadProjects() {
   try {
     const response = await fetch('assets/data/projects.json');
     if (!response.ok) throw new Error('Failed to fetch projects');
-    allProjects = await response.json();
+    const projects = await response.json();
 
-    renderProjects(allProjects);
+    const container = document.getElementById('projects-container');
+    container.innerHTML = ''; // Clear existing content
+
+    projects.forEach(proj => {
+      const card = document.createElement('div');
+      card.className = 'project-card fade-in';
+
+      card.innerHTML = `
+        <img src="${proj.image}" alt="${proj.title}">
+        <div class="project-card-content">
+          <h3>${proj.title}</h3>
+          <p>${proj.description}</p>
+          <a href="${proj.link}">View More</a>
+        </div>
+      `;
+
+      container.appendChild(card);
+    });
   } catch (error) {
     console.error('Error loading projects:', error);
   }
 }
 
-function renderProjects(projects) {
-  const container = document.getElementById('projects-container');
-  container.innerHTML = '';
-
-  if (!projects || projects.length === 0) {
-    container.innerHTML = '<p>No projects found.</p>';
-    return;
-  }
-
-  projects.forEach(proj => {
-    const col = document.createElement('div');
-    col.className = 'col-4 col-6-medium col-12-small';
-
-    col.innerHTML = `
-      <section class="box">
-        <a href="projects/project-detail.html?title=${encodeURIComponent(proj.title)}" class="image fit">
-          <img src="${proj.image}" alt="${proj.title}" />
-        </a>
-        <h3>${proj.title}</h3>
-        <p>${proj.description}</p>
-        <a href="projects/project-detail.html?title=${encodeURIComponent(proj.title)}" class="button">Learn More</a>
-      </section>
-    `;
-
-    container.appendChild(col);
-  });
-}
-
-function filterProjects() {
-  const selectedTool = document.getElementById('toolFilter')?.value.toLowerCase() || 'all';
-
-  const filtered = selectedTool === 'all'
-    ? allProjects
-    : allProjects.filter(proj =>
-        proj.tool?.toLowerCase() === selectedTool
-      );
-
-  renderProjects(filtered);
-}
-
-window.addEventListener('DOMContentLoaded', () => {
-  loadProjects();
-
-  const filterSelect = document.getElementById('toolFilter');
-  if (filterSelect) {
-    filterSelect.addEventListener('change', filterProjects);
-  }
-});
+// Call on page load
+window.addEventListener('DOMContentLoaded', loadProjects);

@@ -3402,3 +3402,11 @@ body {
   padding: 2rem;
   border-radius: 10px;
 }
+.box.feature {
+  text-align: center;
+}
+
+.box.feature i {
+  color: #49bf9d;
+  margin-bottom: 1rem;
+}

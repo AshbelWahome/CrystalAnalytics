@@ -114,33 +114,6 @@
 
 			});
 
-	// Fade-in animation on scroll
-		$window.on('load', function () {
-			const observer = new IntersectionObserver((entries, obs) => {
-				entries.forEach(entry => {
-					if (entry.isIntersecting) {
-						entry.target.classList.add('visible');
-						obs.unobserve(entry.target);
-					}
-				});
-			}, { threshold: 0.1 });
-
-			document.querySelectorAll('.fade-in').forEach(el => {
-				observer.observe(el);
-			});
-		});
+	// **FADE-IN ANIMATION REMOVED HERE**
 
 })(jQuery);
-/* Responsive tweaks */
-@media screen and (max-width: 980px) {
-  .project-card {
-    width: 45%;
-  }
-}
-
-@media screen and (max-width: 736px) {
-  .project-card {
-    width: 100%;
-  }
-}
-
